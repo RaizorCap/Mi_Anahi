@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Anahí 🌸</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="nuevo.css">
+</head>
+
+<body>
+    <!-- Partículas flotantes de fondo -->
+    <div class="particulas" id="particulas"></div>
+
+    <nav>
+        <button onclick="ir('inicio')" class="nav-btn">
+            <span class="icono">🏠</span>
+            <span class="texto">Inicio</span>
+        </button>
+        <button onclick="ir('amor')" class="nav-btn">
+            <span class="icono">💕</span>
+            <span class="texto">Nuestro amor</span>
+        </button>
+        <button onclick="ir('psico')" class="nav-btn">
+            <span class="icono">📚</span>
+            <span class="texto">Psicología</span>
+        </button>
+        <button onclick="ir('como')" class="nav-btn">
+            <span class="icono">👁️</span>
+            <span class="texto">Cómo te ve tu niño</span>
+        </button>
+        <button onclick="ir('promesas')" class="nav-btn">
+            <span class="icono">🤝</span>
+            <span class="texto">Promesas</span>
+        </button>
+        <button onclick="ir('botiquin')" class="nav-btn">
+            <span class="icono">💊</span>
+            <span class="texto">Botiquín</span>
+        </button>
+        <button onclick="ir('jardin')" class="nav-btn">
+            <span class="icono">🌺</span>
+            <span class="texto">Frases</span>
+        </button>
+        <button onclick="ir('juego')" class="nav-btn">
+            <span class="icono">🎮</span>
+            <span class="texto">Minijuego</span>
+        </button>
+        <button onclick="modo()" class="nav-btn modo-btn">
+            <span class="icono" id="iconoModo">🌙</span>
+        </button>
+    </nav>
+
+
+    <section id="inicio" class="seccion activa">
+        <div class="corazon-decorativo">💝</div>
+
+        <h1 class="titulo-principal">
+            <span class="texto-gradiente">Para mi Anahí</span>
+            <span class="flor-animada">🌸</span>
+        </h1>
+
+        <div class="contador-container">
+            <div class="contador-container">
+                <div class="contador" id="contador">
+                    <div class="tiempo-item">
+                        <span class="numero" id="dias">0</span>
+                        <span class="unidad">días</span>
+                    </div>
+                    <div class="separador">:</div>
+                    <div class="tiempo-item">
+                        <span class="numero" id="horas">0</span>
+                        <span class="unidad">horas</span>
+                    </div>
+                    <div class="separador">:</div>
+                    <div class="tiempo-item">
+                        <span class="numero" id="minutos">0</span>
+                        <span class="unidad">min</span>
+                    </div>
+                    <div class="separador">:</div>
+                    <div class="tiempo-item">
+                        <span class="numero" id="segundos">0</span>
+                        <span class="unidad">seg</span>
+                    </div>
+                </div>
+                <div class="subtitulo-contador">Construyendo nuestro destino juntos</div>
+            </div>
+        </div>
+
+        <div class="carta carta-inicio">
+            <div class="marca-agua">💌</div>
+            <p>
+                Mi niña amada, este lugar no es una página: es un pedacito de mi pecho convertido en casa para ti. Yo
+                soy de
+                escribir largo, de sentir hondo y de no saber querer a medias, y por eso te construí este rincón donde
+                mis
+                palabras puedan caminar descalzas como si estuvieran dentro de tu habitación. Quiero que entres aquí
+                como
+                quien entra a un jardín después de la lluvia, oliendo cada frase, tocando cada recuerdo que todavía no
+                hemos
+                vivido pero que ya imagino contigo.
+            </p>
+            <p>
+                Nos elegimos aunque el mapa nos ponga fronteras, aunque tus días en Bolivia y los míos en Perú tengan
+                relojes distintos. No tenemos fotos juntos, pero tenemos algo más fuerte: la decisión terca de
+                quedarnos. Tú
+                con tus responsabilidades enormes, con tu corazón de hermana mayor, con tus miedos al futuro; yo con mis
+                mensajes eternos y mis ganas de cuidarte sin hacerte pequeña.
+            </p>
+            <p>
+                Este 14 no solo es San Valentín: es nuestro primer mes, tu primera semana universitaria, tu nuevo
+                comienzo.
+                Quiero que sientas que alguien te mira con orgullo mientras das esos pasos temblorosos hacia Psicología,
+                que
+                alguien te abraza aunque no pueda cruzar la frontera. Yo te abrazo con palabras, con intención, con la
+                forma
+                seria y sensible que tengo de amarte.
+            </p>
+            <p>
+                Si algún día dudas de todo, vuelve aquí. Estas líneas son como flores secas dentro de un libro: guardan
+                un
+                aroma que no se pierde. Te adoro, mi niña, con la terquedad dulce con la que el sol insiste en salir
+                cada
+                mañana aunque nadie se lo pida.
+            </p>
+            <p>
+                Escribo así porque mi manera de quererte no sabe ser breve. Me nacen ríos de texto como me nace pensarte
+                cuando lavo los platos, cuando camino, cuando me acuesto. Quiero que esta página sea una conversación
+                eterna
+                donde siempre tengas un lugar para sentarte a mi lado, aunque sea a través de una pantalla.
+            </p>
+            <p>
+                Imagino tus ojitos leyendo esto quizá cansados después de un día largo, y quisiera ser yo quien te quite
+                los
+                zapatos y te diga que todo va a estar bien. No soy perfecto, pero soy tuyo de la forma más honesta que
+                conozco.
+            </p>
+            <p>
+                Que este inicio sea como una semilla: pequeña pero decidida a romper la tierra. Yo la riego con mi voz,
+                con
+                mis audios, con mis ganas de verte crecer.
+            </p>
+            <p>
+                Mi amor, gracias por elegirme incluso cuando mis miedos me sabotearon. Gracias por quedarte.
+            </p>
+            <p>
+                Todo lo que sigue en esta web es un abrazo dividido en secciones.
+            </p>
+            <p class="cierre">
+                Y este abrazo no se cierra.
+            </p>
+        </div>
+
+        <button class="boton-musica" onclick="activarAudio()">
+            <span class="icono-boton">🎵</span>
+            <span class="texto-boton">Escúchame, mi niña amada</span>
+            <span class="brillo"></span>
+        </button>
+    </section>
+
+    <section id="amor" class="seccion">
+        <div class="encabezado-seccion">
+            <h2>Nuestro amor</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+
+        <div class="carta carta-amor">
+            <div class="marca-agua">💕</div>
+            <p>
+                Nuestro amor empezó en un balcón de mañana, con un saludo sencillo que no sabía que estaba abriendo un
+                destino. Yo te miré sin entender que ese instante sería la primera página de algo que hoy me sostiene.
+                No
+                fue una película de golpes de suerte; fue más bien como cuando dos plantas crecen cerca y un día sus
+                raíces
+                se tocan bajo la tierra.
+            </p>
+            <p>
+                Tú no me envías audios largos, y aun así me elegiste. Eso vale más que cualquier discurso. Entre países
+                distintos y vidas diferentes nos dijimos sí sin decirlo, y desde entonces te siento como un lugar al que
+                siempre quiero volver.
+            </p>
+            <p>
+                Me enamoré de tu forma de ser chica de casa, de tus manos que saben cocinar, de tu manera de cuidar a
+                tus
+                hermanos como si tu corazón tuviera turnos dobles. Me enamoré de tu risa tímida y de tu humor de TikTok
+                que
+                aparece cuando ya te sientes en confianza.
+            </p>
+            <p>
+                Te imagino como un jardín de Tim Burton: flores raras, oscuritas y tiernas al mismo tiempo, con
+                mariposas
+                que no le tienen miedo a la noche. Así es quererte, una mezcla de ternura y misterio.
+            </p>
+            <p>
+                Cuando me dices "mi niño" algo en mí se sienta a descansar. Es un apodo que me vuelve pequeño y valiente
+                a
+                la vez. Yo te digo "mi niña", "mi princesa", "mi vida", y en cada nombre intento envolverte como con una
+                manta.
+            </p>
+            <p>
+                No hemos vivido mucho tiempo juntos, pero el poco que existe tiene raíces profundas. Cada llamada corta,
+                cada mensaje, cada silencio compartido es un ladrillo de esta casa invisible.
+            </p>
+            <p>
+                Amo que seas sensible, que llores con las películas de Tim Burton, que escuches a Joji y Mac DeMarco
+                como
+                quien conversa con fantasmas bonitos. Amo que te guste la jardinería porque siento que también me riegas
+                a
+                mí.
+            </p>
+            <p>
+                Quiero que nuestro amor sea un lugar donde puedas ser tímida sin miedo, donde no tengas que llamar la
+                atención para ser vista, porque yo te miro incluso cuando te escondes.
+            </p>
+            <p>
+                Si la distancia es un monstruo, nosotros somos dos niños aprendiendo a hacerle cosquillas.
+            </p>
+            <p class="cierre">
+                Y te elijo otra vez, hoy, mañana y en cada versión del mundo.
+            </p>
+        </div>
+    </section>
+
+    <section id="psico" class="seccion">
+        <div class="encabezado-seccion">
+            <h2>Tu camino en Psicología</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+
+        <div class="carta carta-psico">
+            <div class="marca-agua">📖</div>
+            <p class="nota-especial">
+                (Este espacio lo llenará mi niña con su primera semana, sus miedos y victorias.)
+            </p>
+            <p>
+                Pero mientras tanto te escribo lo que ya veo: te imagino caminando por los pasillos con tu mochila llena
+                de
+                sueños y un poquito de miedo escondido en el bolsillo. Psicología te eligió porque tú sabes escuchar
+                incluso
+                cuando estás cansada.
+            </p>
+            <p>
+                Cada clase será como una semilla nueva, algunas difíciles de entender, otras que te harán brillar los
+                ojos.
+                Yo estaré aquí celebrando tus apuntes desordenados, tus desvelos y tus primeras notas.
+            </p>
+            <p>
+                No te pido ser perfecta; te pido ser humana. El mundo necesita psicólogas con corazón real, y tú lo
+                tienes
+                enorme.
+            </p>
+            <p>
+                Si un día sientes que no puedes, recuerda que aprender también es dudar. Tus pasos temblorosos son pasos
+                igual.
+            </p>
+            <p>
+                Te veo ayudando a otros como ayudas a tu familia, con esa mezcla de firmeza y ternura que te
+                caracteriza.
+            </p>
+            <p>
+                Quiero ser el primero en decirte "estoy orgulloso" cuando regreses de tu primera semana.
+            </p>
+            <p>
+                Aunque te sientas pequeña, tu vocación es grande.
+            </p>
+            <p>
+                Respira, mi vida: estás empezando a construir tu futuro.
+            </p>
+            <p class="cierre">
+                Y yo quiero mirarlo desde la primera fila.
+            </p>
+        </div>
+    </section>
+
+    <section id="como" class="seccion">
+        <div class="encabezado-seccion">
+            <h2>Cómo te ve tu niño</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+
+        <div class="carta carta-como">
+            <div class="marca-agua">👁️‍🗨️</div>
+            <p>
+                Te veo como un amanecer que a veces no cree en su propia luz. Te veo cargando responsabilidades que no
+                deberían caber en alguien tan joven y aun así te levantas, cocinas, cuidas, ordenas, sonríes.
+            </p>
+            <p>
+                Te veo tímida cuando alguien te mira de más, y valiente cuando se trata de proteger a los tuyos. Esa
+                mezcla
+                me desarma.
+            </p>
+            <p>
+                Amo tus expresiones directas, tus ojitos cuando te pones coqueta y haces como si no supieras lo que
+                provocas.
+            </p>
+            <p>
+                Te veo cansada algunos días, con el futuro mordiéndote los talones, y quisiera sentarme a tu lado a
+                espantarle los fantasmas.
+            </p>
+            <p>
+                Eres divertida, sensible, energética cuando hablas de lo que te gusta. Podría escucharte toda la vida
+                aunque
+                me contaras el mismo día una y otra vez.
+            </p>
+            <p>
+                Te veo como la persona más valiosa que conocí, no como un objeto sino como un universo con estaciones.
+            </p>
+            <p>
+                Me enseñaste que el amor puede soportar mucho si hay ganas de crecer.
+            </p>
+            <p>
+                Tus abrazos iniciaron todo este romance, y tu valentía de acercarte aquella mañana cambió mi mapa.
+            </p>
+            <p>
+                Te veo imperfecta y por eso real.
+            </p>
+            <p class="cierre">
+                Y te veo conmigo, incluso cuando la distancia hace ruido.
+            </p>
+        </div>
+    </section>
+
+    <section id="promesas" class="seccion">
+        <div class="encabezado-seccion">
+            <h2>Promesas de tu niño</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+
+        <div class="carta carta-promesas">
+            <div class="marca-agua">🤝</div>
+            <div class="lista-promesas">
+                <div class="promesa">Prometo quererte sin hacerte pequeña.</div>
+                <div class="promesa">Prometo desearte bonito, con paciencia.</div>
+                <div class="promesa">Prometo ser refugio y no jaula.</div>
+                <div class="promesa">Prometo celebrar tu carrera como si me graduara contigo.</div>
+                <div class="promesa">Prometo recordarte que el esfuerzo florece.</div>
+                <div class="promesa">Prometo escucharte incluso cuando calles.</div>
+                <div class="promesa">Prometo cuidar tus miedos sin burlarme de ellos.</div>
+                <div class="promesa">Prometo respetar tus tiempos y tu espacio.</div>
+                <div class="promesa">Prometo seguir escribiéndote largo.</div>
+                <div class="promesa">Prometo no apagar tu luz por mis inseguridades.</div>
+                <div class="promesa">Prometo ser hogar aunque esté lejos.</div>
+                <div class="promesa">Prometo aprender a amarte mejor cada mes.</div>
+                <div class="promesa">Prometo no huir cuando la vida se ponga difícil.</div>
+                <div class="promesa">Prometo mirarte con los mismos ojos del primer día.</div>
+                <div class="promesa">Prometo desearte sin exigirte.</div>
+                <div class="promesa">Prometo que mis celos serán chiquitos y mis cuidados grandes.</div>
+                <div class="promesa">Prometo decirte la verdad incluso cuando me tiemble la voz.</div>
+                <div class="promesa">Prometo construir contigo y no sobre ti.</div>
+                <div class="promesa">Prometo ser tu niño sin dejar de ser tu hombre.</div>
+                <div class="promesa cierre">Prometo elegirte otra vez mañana.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="botiquin" class="seccion">
+        <div class="encabezado-seccion">
+            <h2>Botiquín para días grises</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+
+        <div class="carta carta-botiquin">
+            <div class="marca-agua">💊</div>
+            <p>
+                Mi niña, este botiquín es para cuando el pecho te apriete como zapato nuevo. No trae pastillas, trae mi
+                voz
+                convertida en texto largo para que te sientes dentro de él.
+            </p>
+            <p>
+                Todo pasa y mejora; te lo repito como canción que no se cansa. Las recompensas vienen después del caos,
+                como
+                las flores que primero aprenden a ser raíz.
+            </p>
+            <p>
+                Si la universidad te asusta, piensa que nadie nace psicóloga: se vuelve, paso a paso.
+            </p>
+            <p>
+                No te regañes por estar triste; también se avanza respirando.
+            </p>
+            <p>
+                Toma agua, mira el cielo, abraza a tu hermanita, escucha a Joji y deja que el día se haga pequeño.
+            </p>
+            <p>
+                Yo te sostengo desde aquí sin pedirte que seas fuerte todo el tiempo.
+            </p>
+            <p>
+                Tu esfuerzo tiene testigos aunque nadie aplauda.
+            </p>
+            <p>
+                Eres más grande que esta semana.
+            </p>
+            <p>
+                Guarda estas líneas como número de emergencia.
+            </p>
+            <p class="cierre">
+                Tu niño cree en ti incluso cuando tú dudas.
+            </p>
+        </div>
+    </section>
+
+    <section id="jardin" class="seccion">
+        <div class="encabezado-seccion">
+            <h2>Jardín de frases para ti</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+
+        <div class="jardin-contenedor">
+            <div class="categoria-frases tiernas">
+                <h3 class="titulo-categoria">🌸 Tiernísimas</h3>
+                <div class="frase">Mi lugar favorito es donde me dices "mi niño".</div>
+                <div class="frase">Te adoro como pan caliente de mañana.</div>
+                <div class="frase">Si fueras flor te regaría con mi voz.</div>
+                <div class="frase">Eres mi pensamiento que se queda a dormir.</div>
+                <div class="frase">Contigo el amor aprendió a respirar.</div>
+                <div class="frase">Mi niña amada, floreces incluso en mis días nublados.</div>
+                <div class="frase">Eres mi casualidad favorita hecha destino.</div>
+                <div class="frase">Mi niño te cuida aun cuando no te ve.</div>
+                <div class="frase">Princesa, tu nombre me queda grande en el pecho.</div>
+                <div class="frase">Cielito, contigo el futuro no me asusta.</div>
+                <div class="frase">Mi niña, contigo aprendí que el amor también es un lugar donde uno se quita los
+                    zapatos y descansa el corazón.</div>
+                <div class="frase">Te adoro como se adoran las cosas simples: en silencio, despacito y con ganas de que
+                    duren toda la vida.</div>
+                <div class="frase">Si mi voz pudiera abrazarte, ya vivirías despeinada de tanto cariño.</div>
+                <div class="frase">Eres mi pensamiento favorito, el que llega sin avisar y me deja sonriendo como tonto.
+                </div>
+                <div class="frase">No necesito un mundo perfecto, solo uno donde tu mano encuentre la mía.</div>
+                <div class="frase">Mi amor por ti no hace ruido, pero camina conmigo a todas partes.</div>
+                <div class="frase">Si algún día te pierdes, búscame en lo que te hace bien: ahí siempre estaré yo.</div>
+            </div>
+
+            <div class="categoria-frases coquetas">
+                <h3 class="titulo-categoria">💋 Coquetas subiendo</h3>
+                <div class="frase">Cuando dices mi niño me dan ganas de cuidarte y portarme mal.</div>
+                <div class="frase">Me provocas ternura peligrosa.</div>
+                <div class="frase">Quiero ganarme tus ganas.</div>
+                <div class="frase">Me dan celos del aire.</div>
+                <div class="frase">Tienes carita de beso lento.</div>
+                <div class="frase">Mi amor, si me miras así voy a cometer poesía contigo.</div>
+                <div class="frase">Mi niño quiere descubrir todos tus secretos… con calma.</div>
+                <div class="frase">Princesa, tú no provocas problemas, provocas deseos.</div>
+                <div class="frase">Cielito, contigo me dan ganas de portarme mal… bonito.</div>
+                <div class="frase">Mi niña amada, tienes permiso de desordenarme.</div>
+                <div class="frase">Si te acercas un poco más, mi cordura presenta renuncia.</div>
+                <div class="frase">Mi amor, contigo no existen pensamientos inocentes.</div>
+                <div class="frase">Mi niño se pierde cuando tú te encuentras.</div>
+                <div class="frase">Princesa, tu risa es un peligro público.</div>
+                <div class="frase">Contigo aprendí que el respeto y las ganas pueden bailar juntos.</div>
+                <div class="frase">Si te tengo cerquita, mi cordura presenta renuncia y mis manos empiezan a creer en
+                    milagros.</div>
+                <div class="frase">Quiero aprenderme tu piel como quien estudia su destino con los labios y sin apuro.
+                </div>
+                <div class="frase">Tu risa me provoca pensamientos que empiezan inocentes y terminan desabrochándose.
+                </div>
+                <div class="frase">Si me miras así, no respondo por mis besos… ellos ya te eligieron antes que yo.</div>
+                <div class="frase">A tu lado me vuelvo valiente, de esos que se atreven a desnudarte el alma primero… y
+                    lo demás después.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="juego" class="seccion">
+        <div class="encabezado-seccion">
+            <h2>Minijuego — cultiva lo nuestro</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+
+        <div class="juego-contenedor">
+            <div id="panelJuego">
+                <div class="corazones-fondo">💕💕💕</div>
+                <div class="instruccion">Riega nuestro amor con cada click</div>
+
+                <button onclick="regar()" class="boton-regar">
+                    <span class="gota">💧</span>
+                    <span class="texto-regar">Regar</span>
+                </button>
+
+                <div class="barra-progreso">
+                    <div class="barra-fill" id="barraFill"></div>
+                </div>
+
+                <p id="nivel" class="mensaje-nivel">Nivel de amor: 0%</p>
+
+                <div class="indicador-fase" id="indicadorFase">
+                    <span class="emoji-fase">🌱</span>
+                    <span class="texto-fase">Germinando</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal" onclick="this.style.display='none'">
+        <div class="caja" id="textoModal"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
