@@ -295,7 +295,7 @@ window.addEventListener('load', () => {
     });
 
     gsap.from('.carta-inicio', {
-        opacity: 0,
+        opacity: 1,
         y: 30,
         duration: 1,
         delay: 0.6,
